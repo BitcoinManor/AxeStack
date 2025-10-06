@@ -1,0 +1,30 @@
+{
+  "$schema": "https://example.com/axestack/tokens.schema.json",
+  "name": "AxeStack Default",
+  "colors": {
+    "bg": "#0C0F14",
+    "card": "#141A22",
+    "text": "#FFFFFF",
+    "muted": "#9AA4B2",
+    "accent": "#A0FFC8",
+    "warn": "#FFCC66",
+    "error": "#FF6B6B"
+  },
+  "spacing": {
+    "xs": 4,
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "xl": 32
+  },
+  "radii": {
+    "card": 12,
+    "pill": 999
+  },
+  "typography": {
+    "h1": 28,
+    "h2": 22,
+    "body": 18,
+    "mono": 16
+  }
+}
