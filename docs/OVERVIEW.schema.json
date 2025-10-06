@@ -1,0 +1,35 @@
+{
+  "$schema": "https://example.com/axestack/overview.schema.json",
+  "version": "0.1",
+  "layout": {
+    "grid": { "cols": 12, "gap": "md" },
+    "sections": [
+      {
+        "id": "hero",
+        "type": "metric",
+        "metric": "hashrate_ghs",
+        "label": "Hashrate",
+        "format": { "suffix": " GH/s", "decimals": 2 },
+        "chart": { "spark": true, "window": 300 },
+        "col": 12, "row": 1, "span": 12
+      },
+      {
+        "id": "stats_row",
+        "type": "row",
+        "col": 12, "row": 2, "span": 12,
+        "items": [
+          { "type": "badge", "metric": "temp_c", "label": "Temp", "format": { "suffix": " °C", "decimals": 1 } },
+          { "type": "badge", "metric": "fan_pct", "label": "Fan", "format": { "suffix": " %" } },
+          { "type": "badge", "metric": "freq_mhz", "label": "Freq", "format": { "suffix": " MHz" } },
+          { "type": "badge", "metric": "uptime_s", "label": "Uptime", "format": { "kind": "uptime" } }
+        ]
+      },
+      {
+        "id": "footer",
+        "type": "ticker",
+        "metrics": ["pool_name", "shares_accepted", "reject_rate_pct"],
+        "col": 12, "row": 3, "span": 12
+      }
+    ]
+  }
+}
